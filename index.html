@@ -10,12 +10,10 @@
             }
             
             body {
-                background-color: #CCCCCC;
+                background-color: #AAAAAA;
                 min-width: 256px;
                 margin-left: 1rem;
                 margin-right: 1rem;
-                padding-right: 10rem;
-                padding-left: 10rem;
                 font-family: Segoe UI, sans-serif;
                 font-size: 12pt;
                 line-height: normal;
@@ -48,6 +46,13 @@
                 padding-left: 20px;
             }
             
+            .center-content {
+                margin-left: 2rem;
+                margin-right: 2rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+            
             .header {
                 padding: 0px 20px 15px 20px;
                 margin: 0;
@@ -63,7 +68,7 @@
                 background-color: rgb(255, 255, 255);
                 margin: 0px 0px 60px 0px;
                 padding: 20px;
-                border-radius: 6px;
+                border-radius: 10px;
             }
 
             .table {
@@ -84,6 +89,10 @@
                 color: white;
                 text-shadow: 0px 2px 3px rgb(0, 0, 0);
                 line-height: normal;
+            }
+            
+            .rounded {
+                border-radius: 10px;
             }
 
             .sneaky_link {
@@ -108,11 +117,11 @@
     <body>
     
     
-        <header>
+        <header class="center-content">
             <h1 id="title">Toasty's Blog</h1>
         </header>
         
-        <div>
+        <div class="center-content rounded">
             <h2 class="header">Contents</h2>
             <ul class="table">
                 <li><a href="#first-post" class="sneaky_link"> First Post!</a></li>
@@ -124,42 +133,43 @@
                 <li>Coming soon, but not as soon as the other one</li>
             </ul>
         </div>
+        <main>
+            <div class="center-content">
+                <h2 id="first-post" class="header">My First Post</h2>
+                <h6 class="header">Posted on May 21, 2021</h6>
 
-        <div>
-            <h2 id="first-post" class="header">My First Post</h2>
-            <h6 class="header">Posted on May 21, 2021</h6>
-            
-            <p class="contents"> It's been almost a full year since I made the decision to pursue computer science. 
-                I'm still not very far along, but I've made progress nonetheless. Some 
-                progress is still progess, right? That's what they say, anyway. I'm hoping to turn this
-                 into a career over the next year. In order to do that, 
-                 I must work with intention and intensity. By the end of the summer I plan to have a general direction in mind. Front end? SWE? Project Manager? UI/UX designer? I don't know, but I do aim to complete CS50x and have a few small projects built. I'm hoping that I will be able to glean a better idea of where I want to go once I get through that. Today, I made a blog, what's up for tomorrow?</p>
-            
-            <h2 id="second-post" class="header">Future Plans</h2>
-            <h6 class="header">Also posted on May 21, 2021</h6>
-            
-            <p class="contents">I'm planning to make a brick breaker game in JS, creatively titled 
-                Brik Breakr. I'll update back here as I make progress on it.</p>
-            
-            <h2 id="third-post" class="header">Smart Snake</h2>
-            <h6 class="header">Posted on May 30, 2021</h6>
-    
-            <p class="contents"> We're trying something crazy today: <br><br> Can we write a program to make a computer learn 
-                how to play (and improve at) the classic game, Snake? Our goal for today is to simply 
-                write a playable, command-line version of Snake. We plan to implement this with Python.
-                Let's go!</p>
+                <p class="contents"> It's been almost a full year since I made the decision to pursue computer science. 
+                    I'm still not very far along, but I've made progress nonetheless. Some 
+                    progress is still progess, right? That's what they say, anyway. I'm hoping to turn this
+                     into a career over the next year. In order to do that, 
+                     I must work with intention and intensity. By the end of the summer I plan to have a general direction in mind. Front end? SWE? Project Manager? UI/UX designer? I don't know, but I do aim to complete CS50x and have a few small projects built. I'm hoping that I will be able to glean a better idea of where I want to go once I get through that. Today, I made a blog, what's up for tomorrow?</p>
 
-            <h2 id="fourth-post" class="header">Jim Jamz</h2>
-            <h6 class="header">Posted on June 3, 2021</h6>
+                <h2 id="second-post" class="header">Future Plans</h2>
+                <h6 class="header">Also posted on May 21, 2021</h6>
 
-            <p class="contents"> We had a fun time messing around in the Chrome Music Lab today during my band classes. Here's a neat little
-                arrangement that came out of it:
-                <br><br>
-                <iframe src="https://musiclab.chromeexperiments.com/Song-Maker/embed/4684980335149056" allowfullscreen width=100%></iframe>                
-            </p>
-        </div>
+                <p class="contents">I'm planning to make a brick breaker game in JS, creatively titled 
+                    Brik Breakr. I'll update back here as I make progress on it.</p>
+
+                <h2 id="third-post" class="header">Smart Snake</h2>
+                <h6 class="header">Posted on May 30, 2021</h6>
+
+                <p class="contents"> We're trying something crazy today: <br><br> Can we write a program to make a computer learn 
+                    how to play (and improve at) the classic game, Snake? Our goal for today is to simply 
+                    write a playable, command-line version of Snake. We plan to implement this with Python.
+                    Let's go!</p>
+
+                <h2 id="fourth-post" class="header">Jim Jamz</h2>
+                <h6 class="header">Posted on June 3, 2021</h6>
+
+                <p class="contents"> We had a fun time messing around in the Chrome Music Lab today during my band classes. Here's a neat little
+                    arrangement that came out of it:
+                    <br><br>
+                    <iframe src="https://musiclab.chromeexperiments.com/Song-Maker/embed/4684980335149056" allowfullscreen width=100%></iframe>                
+                </p>
+            </div>
+        </main>
         
-        <footer>
+        <footer class="center-content">
             <div class="footer">
                 <h3><a href="#title" class="sneaky_link">Toasty's Blog</a></h3>
                 <p>mmm, toasty.</p>
